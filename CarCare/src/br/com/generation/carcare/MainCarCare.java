@@ -71,7 +71,7 @@ public class MainCarCare {
 						cont = 1;
 						break;
 					default:
-						System.out.println("\nO numero informado nao corresponde a uma opçao!  \nDigite novamente!");
+						System.err.println("\nO numero informado nao corresponde a uma opçao!  \nDigite novamente!");
 						}
 				} while (cont != 1);
 
@@ -94,14 +94,15 @@ public class MainCarCare {
 
 				x = 1;
 			} else {
-				System.out.println("\nO numero informado nao corresponde a uma opçao!  \nDigite novamente!");
+				System.err.println("\nO numero informado nao corresponde a uma opçao!  "
+						         + "\n            Digite novamente!");
 			
 			}
 		}
 		
 		for(int k=0; k < 51; k++) {
 			Thread.sleep(20);
-			System.out.print(teste.charAt(k));
+			System.err.print(teste.charAt(k));
 		}
 
 		ler.close();

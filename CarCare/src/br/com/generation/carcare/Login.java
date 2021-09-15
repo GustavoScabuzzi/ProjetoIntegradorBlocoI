@@ -21,7 +21,7 @@ public class Login extends Usuario {
 		for (int y = 0; y < ArrayLogin.size(); y++) { // O "y" CAMINHARÁ ATÉ O TAMANHO TOTAL DO ARRAYLIST
 			if (getUsuario().equalsIgnoreCase(ArrayLogin.get(y).getUsuario())) { // SE ENTRAR O VALOR QUE VOCE DIGITOU ELE DA A
 																		// MENSAGEM DE USUARIO EM USO
-				System.out.println("Usuario em uso!");
+				System.err.println("Usuario em uso!");
 				break; // AQUI ELE FORÇA PARA SAIR DO LAÇO "for"
 			} else if (y == ArrayLogin.size() - 1) { // SE ELE NAO ENCONTRAR NENHUM VALOR IGUAL NO ARRAY ENTAO ELE
 														// AVANÇA
@@ -78,8 +78,7 @@ public class Login extends Usuario {
 								// CODIGO
 		System.out.println("\n----Lista de Logins----\n");
 		for (int i = 0; i < ArrayLogin.size(); i++) {
-			System.out.println(
-					"Usuario| " + ArrayLogin.get(i).getUsuario() + "		Senha| " + ArrayLogin.get(i).getSenha());
+			System.out.print("Usuario| " +ArrayLogin.get(i).getUsuario()+ "     Senha| " + ArrayLogin.get(i).getSenha());
 		}
 
 	}

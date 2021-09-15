@@ -147,7 +147,7 @@ public class Carro extends Usuario {
 	 				
 	 				break;
 	 			}else if(i == ArrayCarro.size()-1 && !digitado.equals(ArrayCarro.get(i).getModeloCarro())){
-	 				System.out.println("\n  »»» O modelo nao existe!");
+	 				System.err.println("\n  »»» O modelo nao existe!");
 	 				break;
 	 			}
 	 		}

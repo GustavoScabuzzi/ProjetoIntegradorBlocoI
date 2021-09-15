@@ -19,7 +19,7 @@ public class Manutencao {
 				System.out.println("  »»» Voce deve trocar o filtro de oleo");
 			}
 		} else if(trocaOleo > kmAtual){
-			System.out.println("            O valor é incorreto!\n" 
+			System.err.println("            O valor é incorreto!\n" 
 					 + "Deve ser um valor maior que o ultimo KM registrado!");
 		} else if(kmAtual - trocaOleo < 5000) {
 			System.out.println("____Voce não tem manutençoes a fazer!");
